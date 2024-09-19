@@ -27,4 +27,4 @@ const NavigationBar = () =>{
         </div>
     )
 }
-export default NavigationBar;git init
+export default NavigationBar;
