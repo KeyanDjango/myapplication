@@ -17,6 +17,10 @@ const Home = () =>{
                <span>Profile</span>
             </div>
 
+            <div className="box-con1">
+               <span>Settings</span>
+            </div>
+
         </div>
     )
 }
