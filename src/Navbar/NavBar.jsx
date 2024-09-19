@@ -6,6 +6,11 @@ const NavigationBar = () =>{
     const navigate = useNavigate();
     const location = useLocation();
 
+    const handleNavigation = (path) =>{
+       if(location.pathname !== path)
+         navigate(path);
+    }
+
     return(
         <div className="parent-box">
 
@@ -19,7 +24,7 @@ const NavigationBar = () =>{
              <span  style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20}}>Home</span>
              <span style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20}}>DashBoard</span>
              <span style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20}}>Settings</span>
-             <span  onClick={() =>navigate('/Profile')} style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20,textDecoration:location.pathname === '/Profile' ? 'underline' :'transparent'}}>Profile</span>
+             <span  onClick={() =>handleNavigation('/Profile')} style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20,textDecoration:location.pathname === '/Profile' ? 'underline' :'transparent'}}>Profile</span>
 
            </div>
 
@@ -27,4 +32,4 @@ const NavigationBar = () =>{
         </div>
     )
 }
-export default NavigationBar;git init
+export default NavigationBar;
