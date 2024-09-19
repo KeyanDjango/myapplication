@@ -24,6 +24,7 @@ const NavigationBar = () =>{
              <span  style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20}}>Home</span>
              <span style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20}}>DashBoard</span>
              <span style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20}}>Settings</span>
+             
              <Link to="/Profile"
              style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20,textDecoration:location.pathname === '/Profile' ? 'underline' :'transparent'}}
              > Profile </Link>
