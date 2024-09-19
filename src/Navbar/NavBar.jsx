@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavBar.css';
-import {useNavigate,useLocation} from 'react-router-dom'
+import {useNavigate,useLocation,Link} from 'react-router-dom'
 
 const NavigationBar = () =>{
     const navigate = useNavigate();
@@ -24,7 +24,9 @@ const NavigationBar = () =>{
              <span  style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20}}>Home</span>
              <span style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20}}>DashBoard</span>
              <span style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20}}>Settings</span>
-             <span  onClick={() =>handleNavigation('/Profile')} style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20,textDecoration:location.pathname === '/Profile' ? 'underline' :'transparent'}}>Profile</span>
+             <Link to="/Profile"
+             style={{marginRight:100,fontWeight:'bold',color:'white',fontSize:20,textDecoration:location.pathname === '/Profile' ? 'underline' :'transparent'}}
+             > Profile </Link>
 
            </div>
 
